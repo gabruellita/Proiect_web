@@ -63,12 +63,20 @@ h1{
 .todo-container {
     display: flex;
     /* gap: 1rem; */
-    border: 1px solid gray;
     border-top: none;
     margin: 5px;
     padding: auto;
     /* justify-content: space-between; */
     align-items: center;
+}
+
+.todo-main{
+  border: 1px solid gray;
+  display: flex;
+  border-top: none;
+  margin: 5px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 
@@ -122,11 +130,11 @@ input[type="checkbox"] {
     border-radius: 50%;
   }
 
-.todo-container input[type="button"]{
+.todo-main input[type="button"]{
   visibility: hidden;
   justify-content: space-between;
 }
-.todo-container:hover input[type="button"]{
+.todo-main:hover input[type="button"]{
   visibility: visible;
   text-align: right;
   border: none;
