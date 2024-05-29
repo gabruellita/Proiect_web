@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -13,13 +14,14 @@
         <h1>todos</h1>
 
         <div class="add-bar">
-            <button class="btn"><img src="images/arrow-down-sign-to-navigate.png" alt="arrow-down"> </button>
+            <button class="btn" id="btn-complete-all"><img src="images/arrow-down-sign-to-navigate.png"
+                    alt="arrow-down"> </button>
             <input type="text" placeholder="What needs to be done?" id="text-bar" class="input-field" />
         </div>
 
         <ul class="scroll">
-            <li class="todoList">
-                <p>
+            <li class="todoList" id="todo_list">
+                <!-- <p>
                 <div class="todo-main">
                     <div class="todo-container">
                         <input id="input-0" class="todo-checkbox" type="checkbox" checked="" />
@@ -39,9 +41,24 @@
                     </div>
                     <input id="del-1" class="del-todo" type="button" value="X" />
                 </div>
-                </p>
+                </p> -->
             </li>
         </ul>
+
+        <div class="utility">
+            <div class="counter-conteiner">
+                <p><span id="count">0</span> items left </p>
+            </div>
+            <div>
+                <select name="todos" class="filter-todos">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div>
+            <div><button id="deleteButton">Delete All</button></div>
+            <div><button id="clearCompleted">Clear Completed</button></div>
+        </div>
 
     </section>
 

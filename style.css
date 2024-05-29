@@ -7,11 +7,13 @@ body{
     margin-top: 0%;
     border-top: 0px;
     padding-top: 0%;
+    /* background-color: gray; */
 }
 
 .btn img {
     width: 30px;
     height: 20px;
+    /* border: none; */
 }
 
 .btn {
@@ -46,6 +48,7 @@ body{
     margin-top: 0%;
     border-top: 0px;
     padding-top: 0%;
+    /* background-color: white; */
   }
 
 h1{
@@ -68,6 +71,7 @@ h1{
     padding: 1rem;
     font-size: 2.5rem;
     border-left: none;
+    /* border: none; */
 }
 
 .todo-container {
@@ -150,4 +154,11 @@ input[type="checkbox"] {
   appearance: none; 
   cursor: pointer;
   justify-content: space-between;
+}
+
+.utility {
+  display: flex;
+  justify-content: space-between;
+  border: 20px;
+  padding: 20px;
 }
